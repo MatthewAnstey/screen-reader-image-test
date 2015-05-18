@@ -5,16 +5,16 @@
 	$button.addEventListener('click', descriptionToggle);    
 
 	 function descriptionToggle () {
-		var cssValue;
+		var ariaExpanded;
         
         for (var i = 0; i < $description.length; i++) {
-        	if ($description[i].style.display === 'none') {
-        		cssValue = 'block';
+        	if ($description[i].getAttribute('aria-expanded') === 'true') {
+        		ariaExpanded = false;
         	}
         	else {
-        		cssValue = 'none';
+        		ariaExpanded = true;
         	}
-        	$description[i].style.display = cssValue;
+        	$description[i].setAttribute('aria-expanded', ariaExpanded);
         }
 
 	};

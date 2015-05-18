@@ -5,10 +5,10 @@
 <body>
 	<div class="tests">
 	    <h1> Screen Reader Image Test</h1>
-	    <button class="js-tests-toggle">Toggle Descriptions</button>
+	    <button aria-controls="image-description visually-description image-description" class="js-tests-toggle">Toggle Descriptions</button>
 		<div class="test-wrapper">
 		    <h2>Image</h2>
-			<div class="description js-description">
+			<div class="description js-description" id="image-description" aria-expanded="true">
 				<p> Just image instead of text, relies on alt text </p>
 				<xmp><img src="http://lorempixel.com/g/30/30/" alt="&pound;1"/></xmp>
 			</div>
@@ -18,7 +18,7 @@
 		</div>
 		<div class="test-wrapper">
 		    <h2>Visually hidden text</h2>
-			<div class="description js-description">
+			<div class="description js-description" id="visually-description" aria-expanded="true">
 				<p> Visually hidden text with image that is ignored by the screen reader </p>
 				<xmp><img src="http://lorempixel.com/g/30/30/" alt="&pound;1" role="presentation"/><b class="visually-hidden">&pound;1</b>
 				</xmp>
@@ -29,7 +29,7 @@
 		</div>
 		<div class="test-wrapper">
 		    <h2>Image as background</h2>
-			<div class="description js-description">
+			<div class="description js-description" id="image-description" aria-expanded="true">
 				<p>Visually hidden text with Image as background </p>
 				<xmp><div class="with-background"><b class="visually-hidden">&pound;1</b></div></xmp>
 			</div>
