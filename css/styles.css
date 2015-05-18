@@ -1,0 +1,31 @@
+.tests {
+	max-width: 60em;
+	margin: 0 auto;
+}
+.test-wrapper {
+	margin: 1.250em 0.625em;
+	padding: 0 0.313em 1.250em;
+	border-bottom: 0.063em solid grey;
+}
+.text-wrapper xmp {
+	width: 6.250em;
+}
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.with-background {
+	background-image: url('http://lorempixel.com/g/30/30/');
+	display: block;
+	width: 1.875em;
+	height: 1.875em;
+}
+[aria-expanded=false] {
+    display: none;    
+}
